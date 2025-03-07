@@ -7,7 +7,7 @@ export async function POST(req) {
     const { query } = await req.json(); // ✅ Extract body correctly
 
     const response = await axios.post(
-      "https://50a7-34-126-76-215.ngrok-free.app/chatbot",
+      "https://53c1-34-87-23-113.ngrok-free.app/chatbot",
       { query },
       {
         headers: {
