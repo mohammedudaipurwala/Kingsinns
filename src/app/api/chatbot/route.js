@@ -20,6 +20,7 @@ export async function POST(req) {
   } catch (error) {
     console.error("Chatbot API error:", error);
     
-    return NextResponse.json({ error: "Error calling the external API" }, { status: 500 });
+    
+    return NextResponse.json({ error: "Error calling the external API" }, { status: 500 },{message:error});
   }
 }
